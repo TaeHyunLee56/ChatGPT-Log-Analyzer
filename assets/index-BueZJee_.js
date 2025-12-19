@@ -388,9 +388,9 @@ Assistant: ${we.assistant}`).join(`
 
 
         ISSUE TYPE (choose one):
-        - "factual_error": Wrong or fabricated information
-        - "misalignment": Doesn't match user's request
-        - "none": Only if score is 1
+        - "factual_error": The response contains factually incorrect, fabricated, or unverifiable information. The content itself is wrong, even if it matches what the user asked for.        
+        - "misalignment": The response does NOT match the user's specific request, intent, or requirements, even if the information itself is factually correct. The assistant misunderstood or ignored what the user actually wanted.
+        - "none": Only if score is 1 (no issues detected)
 
         PURPOSE (choose the MOST ACCURATE one based on user's intent):
         
